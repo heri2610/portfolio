@@ -1,27 +1,29 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 
-const Header = () => {
-  const [them, setThem] = useState("light")
+const Header = ({headerRef}) => {
+  const [them, setThem] = useState("dark")
   const [hamAct, SetHamAct] = useState(false)
   
+  useEffect(() => {
+    const theem = window.localStorage.getItem("them")
+    if (theem == "dark") document.documentElement.classList.add('dark');
+  }, [])
+
   const swichClick = ()=>{
     if (them == "light") {
         setThem("dark")
+        window.localStorage.setItem("them", "dark")
         document.documentElement.classList.add('dark');
     } else {
         setThem("light")
+        window.localStorage.setItem("them", "light")
         document.documentElement.classList.remove('dark');
     }
   }
-    // useEffect(() => {
-    //     window.addEventListener('click', ()=>SetHamAct(false));
-    //     return () => {
-    //     window.removeEventListener('click', ()=>SetHamAct(false));
-    //     };
-    // }, []);
+
   return (
-    <header className="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent">
+    <header className="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent" ref={headerRef}>
       <div className="container">
         <div className="relative flex items-center justify-between">
           <div className="px-4">

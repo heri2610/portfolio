@@ -7,15 +7,33 @@ const Hero = () => {
         <div className="flex flex-wrap">
           <div className="w-full self-center px-4 lg:w-1/2">
             <h1 className="text-base font-semibold text-primary md:text-xl">Halo Semua 👋, saya <span className="mt-1 block text-4xl font-bold text-dark dark:text-white lg:text-5xl">Suhaeri</span></h1>
-            <h2 className="mb-5 text-lg font-medium text-secondary lg:text-2xl">Lecturer & <span className="text-dark dark:text-white">Content Creator</span></h2>
-            <p className="mb-10 font-medium leading-relaxed text-secondary">Belajar web programming itu mudah dan menyenangkan bukan. <span className="font-bold text-dark dark:text-white">bukan!</span></p>
-
-            <a href="#" className="rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg">Hubungi Saya</a>
+            <h2 className="mb-5 text-lg font-medium text-secondary lg:text-2xl">Programmer | Software Enginer</h2>
+            <p className="mb-10 font-medium leading-relaxed text-black dark:text-white">I am a Full Stack Engineer with work experience at PT Okta Prima Mulya and Platon, and have attended various trainings at Dicoding, Altera, Binar Academy, and others. I am determined to continue developing as a programmer and deepen my understanding of system security. With skills in JavaScript, PHP, and Golang, I am ready to collaborate on creative projects in the future.</p>
+            <a href="file/Suhaeri-cv.pdf" download={true} target="_blank" className="rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-300 ease-in-out hover:text-primary hover:bg-white border-primary border-2 hover:dark:bg-dark">
+              Resume
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width={24}
+                height={24}
+                viewBox="0 0 24 24"
+                className="inline"
+              >
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M11 7H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2v-5m-7 1L20 4m-5 0h5v5"
+                />
+              </svg>
+            </a>
           </div>
           <div className="w-full self-end px-4 lg:w-1/2">
             <div className="relative mt-10 lg:right-0 lg:mt-9">
               <img src="image/suhaeri.png" alt="suhaeri" className="relative z-10 mx-auto max-w-full" />
-              <span className="absolute bottom-0 left-1/2 -translate-x-1/2 md:scale-125">
+              <span className="absolute bottom-0 left-1/2 -translate-x-1/2 -mb-8 md:mb-0 md:scale-125">
                 <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                   <path
                     fill="#14b8a6"
