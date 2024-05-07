@@ -10,7 +10,6 @@ const Projects = () => {
             <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">Projects</h2>
           </div>
         </div>
-
         <div class="flex flex-wrap">
           <div class="w-full px-4 lg:w-1/2 xl:w-1/3 ">
             <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800 dark:shadow-slate-700">
@@ -49,6 +48,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
+        
       </div>
     </div>
   )
