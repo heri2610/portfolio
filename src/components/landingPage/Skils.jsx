@@ -55,17 +55,17 @@ const Skils = () => {
           </div>
         </div>
       </div>
-      <div className='w-full px-4 lg:w-[90vw] mx-auto'>
+      <div className='w-full px-1 lg:px-4 lg:w-[90vw] mx-auto'>
         <div>
           <div className='mb-6'>
-            <Marquee speed={60}>
+            <Marquee speed={60} >
               {mySkills.map((mySkill)=>(
                 <DivMarguee src={mySkill}/>
               ))}
             </Marquee>
           </div>
           <div className='mb-6'>
-            <Marquee direction="right">
+            <Marquee direction="right" speed={60}>
               {mySkills2.map((mySkill)=>(
                 <DivMarguee src={mySkill}/>
               ))}
