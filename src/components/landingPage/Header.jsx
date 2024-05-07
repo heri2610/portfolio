@@ -7,7 +7,14 @@ const Header = ({headerRef}) => {
   
   useEffect(() => {
     const theem = window.localStorage.getItem("them")
-    if (theem == "dark") document.documentElement.classList.add('dark');
+    if(!theem) {
+      window.localStorage.setItem("them", "dark")
+      document.documentElement.classList.add('dark');
+      setThem("dark") 
+    }else{
+      document.documentElement.classList.add(theem);
+      setThem(theem)
+    }
   }, [])
 
   const swichClick = ()=>{

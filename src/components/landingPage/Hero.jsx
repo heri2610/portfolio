@@ -31,9 +31,9 @@ const Hero = () => {
             </a>
           </div>
           <div className="w-full self-end px-4 lg:w-1/2">
-            <div className="relative mt-10 lg:right-0 lg:mt-9">
+            <div className="relative mt-10 lg:right-0 lg:mt-9 overflow-hidden md:overflow-visible">
               <img src="image/suhaeri.png" alt="suhaeri" className="relative z-10 mx-auto max-w-full" />
-              <span className="absolute bottom-0 left-1/2 -translate-x-1/2 -mb-8 md:mb-0 md:scale-125">
+              <span className="absolute bottom-0 left-1/2 -translate-x-1/2 -mb-24 md:mb-0 md:scale-125 ">
                 <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                   <path
                     fill="#14b8a6"
