@@ -42,10 +42,20 @@ const Experience = () => {
             <Timeline.Item>
               <Timeline.Point  icon={MdOutlineWorkHistory}/>
               <Timeline.Content>
-                <Timeline.Time>August 2023 - October 2023</Timeline.Time>
+                <Timeline.Time>January 2023 - October 2023</Timeline.Time>
                 <Timeline.Title>Sofware Enginer <span className='text-primary'>@Platon</span></Timeline.Title>
                 <Timeline.Body>
                   Collaborates with product managers via Google Meet to discuss project requirements, executes assigned tasks including slicing, integration, and database setup using technologies like Next.js, Prisma ORM, React.js, and others. Works independently to meet deadlines, communicates regularly with clients for updates and feedback, ensuring high-quality results aligned with client expectations.
+                </Timeline.Body>
+              </Timeline.Content>
+            </Timeline.Item>
+            <Timeline.Item>
+              <Timeline.Point  icon={MdOutlineWorkHistory}/>
+              <Timeline.Content>
+                <Timeline.Time>August 2023 - October 2023</Timeline.Time>
+                <Timeline.Title>Full Stack Developer <span className='text-primary'>@PT Okta Prima Mulya</span></Timeline.Title>
+                <Timeline.Body>
+                  Created a comprehensive e-commerce platform incorporating auctions, concierge services, buying/selling, and item requests. Utilized Next.js and Tailwind CSS for frontend design, MongoDB for database schemas, and Express.js for backend support. Integrated RabbitMQ and Socket.io for real-time notifications, Stripe for payment processing, and Node Mailer for user communications.
                 </Timeline.Body>
               </Timeline.Content>
             </Timeline.Item>
@@ -56,16 +66,6 @@ const Experience = () => {
                 <Timeline.Title> Web DeveloperWeb Developer <span className='text-primary'>@Freelance</span></Timeline.Title>
                 <Timeline.Body>
                   Developed applications for Ngawi District Agriculture Department with Express, React, PostgreSQL, Socket.io, Swagger. Created pharmacist admin dashboard using CodeIgniter 4, Tailwind CSS, MySQL. Engaged in slicing, integration, API utilization with HTML, jQuery, Ajax, Bootstrap.
-                </Timeline.Body>
-              </Timeline.Content>
-            </Timeline.Item>
-            <Timeline.Item>
-              <Timeline.Point  icon={MdOutlineWorkHistory}/>
-              <Timeline.Content>
-                <Timeline.Time>April 2022</Timeline.Time>
-                <Timeline.Title>Full Stack Developer <span className='text-primary'>@PT Okta Prima Mulya</span></Timeline.Title>
-                <Timeline.Body>
-                  Developed a robust e-commerce platform with features like auctions, concierge services, and buying/selling, using Next.js and Tailwind CSS for frontend design. Leveraged MongoDB for database schemas and Express.js for backend support, including notifications and chat functionalities. Integrated RabbitMQ and Socket.io for real-time notifications, and Stripe for seamless payment processing. Implemented Node Mailer for user communications, ensuring a comprehensive and efficient platform experience.
                 </Timeline.Body>
               </Timeline.Content>
             </Timeline.Item>
