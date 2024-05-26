@@ -2,26 +2,26 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 
 const Header = ({headerRef}) => {
-  const [them, setThem] = useState("dark")
+  const [them, setThem] = useState("")
   const [hamAct, SetHamAct] = useState(false)
   
   useEffect(() => {
     const theem = window.localStorage.getItem("them")
     if(!theem) {
       window.localStorage.setItem("them", "dark")
+      window.localStorage.setItem("flowbite-theme-mode", "dark")
       setThem("dark") 
     }else{
-      console.log(theem) 
       setThem(theem)
     }
   }, [])
 
   useEffect(() => {
     if (them == "dark") {
-        
+        window.localStorage.setItem("flowbite-theme-mode", "dark")
         document.documentElement.classList.add('dark');
     } else {
-        
+        window.localStorage.setItem("flowbite-theme-mode", "light")
         document.documentElement.classList.remove('dark');
     }
   }, [them])
