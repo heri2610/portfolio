@@ -9,23 +9,30 @@ const Header = ({headerRef}) => {
     const theem = window.localStorage.getItem("them")
     if(!theem) {
       window.localStorage.setItem("them", "dark")
-      document.documentElement.classList.add('dark');
       setThem("dark") 
     }else{
-      document.documentElement.classList.add(theem);
+      console.log(theem) 
       setThem(theem)
     }
   }, [])
+
+  useEffect(() => {
+    if (them == "dark") {
+        
+        document.documentElement.classList.add('dark');
+    } else {
+        
+        document.documentElement.classList.remove('dark');
+    }
+  }, [them])
 
   const swichClick = ()=>{
     if (them == "light") {
         setThem("dark")
         window.localStorage.setItem("them", "dark")
-        document.documentElement.classList.add('dark');
     } else {
-        setThem("light")
         window.localStorage.setItem("them", "light")
-        document.documentElement.classList.remove('dark');
+        setThem("light")
     }
   }
 

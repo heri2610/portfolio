@@ -47,34 +47,34 @@ const DivMarguee = ({src}) =>{
 const Skils = () => {
   return (
     <div className="bg-slate-800 pt-36 pb-28 dark:bg-slate-300">
-      <div class="container">
-        <div class="w-full px-4">
-          <div class="mx-auto mb-16 text-center">
-            <h4 class="mb-2 text-lg font-semibold text-primary">Skills</h4>
-            <h2 class="mb-4 text-3xl font-bold text-white dark:text-dark sm:text-4xl lg:text-5xl">Programming Skills</h2>
+      <div className="container">
+        <div className="w-full px-4">
+          <div className="mx-auto mb-16 text-center">
+            <h4 className="mb-2 text-lg font-semibold text-primary">Skills</h4>
+            <h2 className="mb-4 text-3xl font-bold text-white dark:text-dark sm:text-4xl lg:text-5xl">Programming Skills</h2>
           </div>
         </div>
       </div>
       <div className='w-full px-1 lg:px-4 lg:w-[90vw] mx-auto'>
         <div>
           <div className='mb-6'>
-            <Marquee speed={60} >
-              {mySkills.map((mySkill)=>(
-                <DivMarguee src={mySkill}/>
+            <Marquee speed={60}>
+              {mySkills.map((mySkill, i)=>(
+                <DivMarguee src={mySkill}  key={i}/>
               ))}
             </Marquee>
           </div>
           <div className='mb-6'>
             <Marquee direction="right" speed={60}>
-              {mySkills2.map((mySkill)=>(
-                <DivMarguee src={mySkill}/>
+              {mySkills2.map((mySkill, i)=>(
+                <DivMarguee src={mySkill}  key={i}/>
               ))}
             </Marquee>
           </div>
           <div>
             <Marquee speed={65}>
-              {mySkills3.map((mySkill)=>(
-                <DivMarguee src={mySkill}/>
+              {mySkills3.map((mySkill, i)=>(
+                <DivMarguee src={mySkill}  key={i}/>
               ))}
             </Marquee>
           </div>
