@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="mb-8 w-full px-4 font-medium text-slate-300 md:w-1/3">
             <h3 className="mb-2 text-2xl font-bold">Contact Us</h3>
             <p>suhaeriheri45@gmail.com</p>
-            <p>Link.Kepandean Got, Jl. Takari, Taktakan, Kec. Taktakan, Kota Serang, Banten 42162</p>
+            <p>Serang, Banten 42162</p>
           </div>
           <div className="mb-6 w-full px-4 md:w-1/3">
             <h3 className="mb-4 text-xl font-semibold text-white">Tautan</h3>

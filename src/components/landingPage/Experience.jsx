@@ -32,7 +32,7 @@ const Experience = () => {
             <Timeline.Item>
               <Timeline.Point icon={MdOutlineWorkHistory}/>
               <Timeline.Content>
-                <Timeline.Time>October 2023 - March 2023</Timeline.Time>
+                <Timeline.Time>October 2023 - March 2024</Timeline.Time>
                 <Timeline.Title>Sofware Enginer <span className='text-primary'>@Platon</span></Timeline.Title>
                 <Timeline.Body>
                   Responsible for end-to-end development of web and mobile applications across diverse industries, ensuring security, performance, and scalability. Manages frontend slicing, collaborates closely with clients to meet specifications, delivers progress presentations, and offers ongoing technical support and maintenance, including updates and issue resolution.
